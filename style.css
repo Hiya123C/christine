@@ -1,0 +1,265 @@
+:root {
+  /* colour theme: night sky, pastel */
+  --bg: #0f1224;
+  --mid: #171a34;
+  --surface: #1c1f42;
+
+  --fblue: #b8d8ff;
+  --sblue: #9cc9f5;
+  --tblue: #7fb3ea;
+  --lblue: #5a9bd6;
+
+  --lpurple: #c6c3f7;
+  --dpurple: #9fa3e3;
+  --purple: #bfb5e0;
+
+  --yellow: #FFD700;
+  --gold: #EFBF04;
+
+  /* neutrals */
+  --white: #f4f6ff;
+  --muted: #9aa0c8;
+  --black: #0b0d1a;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--bg), var(--mid), var(--surface));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-x: hidden;
+}
+
+/* STAR BG */
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.stars {
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png") repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+/* FONTS AND STYLES */
+.crimson-pro {
+  font-family: "Crimson Pro", serif;
+  font-style: normal;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+.title {
+    color: var(--white);
+    font-weight: 380;
+    font-size: 4.5rem;
+    margin: 0;
+    /* border: 2px solid red; */
+}
+
+.highlight {
+    color: var(--lpurple);
+    font-weight: 500;
+}
+
+
+
+/* HEADER */
+#header {
+    position: relative;
+    margin-top: 12vh;
+    padding: 32px 64px;
+    border-radius: 999px;
+    background: var(--surface);
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 999px;
+    background: linear-gradient(
+        120deg,
+        var(--fblue),
+        var(--lpurple),
+        var(--sblue)
+    );
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+
+/* MY SPIN CUBE HEADER LOL */
+.cube {
+  /* display: inline-block; */
+  display: flex;
+  position: relative;
+  width: 140px;
+  height: 1.2em;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  animation: cubeSpin 8s infinite ease-in-out;
+
+  transform-origin: center center;
+
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.cube .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* cube faces */
+.cube .face:nth-child(1) {
+  transform: rotateX(0deg) translateZ(0.6em);
+  color: var(--fblue);
+}
+.cube .face:nth-child(2) {
+  transform: rotateX(90deg) translateZ(0.6em);
+  color: var(--sblue);
+}
+.cube .face:nth-child(3) {
+  transform: rotateX(180deg) translateZ(0.6em);
+  color: var(--tblue);
+}
+.cube .face:nth-child(4) {
+  transform: rotateX(270deg) translateZ(0.6em);
+  color: var(--sblue);
+}
+
+/* cube rotation */
+@keyframes cubeSpin {
+  0%, 15%   { transform: rotateX(0deg); }
+  25%, 40%  { transform: rotateX(-90deg); }
+  50%, 65%  { transform: rotateX(-180deg); }
+  75%, 90%  { transform: rotateX(-270deg); }
+  100%      { transform: rotateX(-360deg); }
+}
+
+/* vertical nav bar... */
+.vertical-nav {
+    position: fixed;
+    right: 5vw;
+    top: 50vh;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10vh;
+    z-index: 100;
+}
+
+.nav-line {
+    position: absolute;
+    margin-left: 8vw;
+    width: 2px;
+    height: 70vh;
+    background-color: var(--dpurple);
+    z-index: -1;
+}
+
+.nav-heart {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.nav-heart img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.10s ease, opacity 0.10s ease;
+    opacity: 0.7;
+}
+
+.nav-title {
+    font-size: 0.85rem;
+    color: var(--muted);
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-heart:hover .img {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+.nav-heart:hover .nav-title{
+    color: var(--white);
+}
+
+.nav-heart.active .nav-title {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.nav-heart img:active {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+
+/* photos */
+.photo-strip {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.photo-strip img {
+    width: 180px;
+    border-radius: 16px;
+    object-fit: cover;
+    transform: rotate(-3deg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.35s ease;
+}
+
+.photo-strip img:nth-child(even) {
+    transform: rotate(3deg);
+}
+
+.photo-strip img:hover {
+    transform: rotate(0deg) scale(1.1);
+}
+
