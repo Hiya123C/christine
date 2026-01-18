@@ -10,26 +10,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- stars??? -->
+    <!-- bg stars??? -->
     <div class="background-container">
         <div class="stars"></div>
     </div>
 
-
     <!-- photos -->
     <div class="photo-strip">
-        <img src="photos/rgge2.jpg" alt="pic1">
-        <img src="photos/xkx.jpeg" alt="pic2">
-        <img src="photos/musicroom.jpg" alt="pic3">
-        <img src="photos/rgge.jpg" alt="pic4">
-        <img src="photos/lost_danny.jpg" alt="pic5"">
+        <div class="photo">
+            <img src="photos/rgge2.jpg" alt="pic1">
+            <span class="photo-label">Guitar Concert</span>
+        </div>
+        <div class="photo">
+            <img src="photos/xkx.jpeg" alt="pic2">
+            <span class="photo-label">XinKongXia 2nd Place!</span>
+        </div>
+        <div class="photo">
+            <img src="photos/musicroom.jpg" alt="pic3">
+            <span class="photo-label">Music Room</span>
+        </div>
+        <div class="photo">
+            <img src="photos/rgge.jpg" alt="pic4">
+            <span class="photo-label">last SYF</span>
+        </div>
+        <div class="photo">
+            <img src="photos/lost_danny.jpg" alt="pic5">
+            <span class="photo-label">MEP Concert</span>
+        </div>
+        <div class="photo">
+            <img src="photos/flowers.jpg" alt="pic6">
+            <span class="photo-label">flowers?!</span>
+        </div>
+        <div class="photo">
+            <img src="photos/fun1.jpg" alt="pic7">
+            <span class="photo-label">Korea, Seoul</span>
+        </div>
     </div>
 
     <!-- vertical navbar -->
     <nav class="vertical-nav">
-        <div class="nav-line"></div>
+        <div class="nav-line">
+            <img src="assets/star-yellow.svg" class="nav-star">
+            <img src="assets/star-sparkle.svg" class="nav-star">
+            <img src="assets/star-lblue.svg" class="nav-star">
+            <img src="assets/star-sparkle.svg" class="nav-star">
+            <img src="assets/star-gold.svg" class="nav-star">
+        </div>
         <a href="#whoami" class="nav-heart">
-            <p class="nav-title">Whoami</p>
+            <p class="nav-title">whoami</p>
             <img src="assets/heart1.svg">
         </a>
         <a href="#skills" class="nav-heart">
@@ -40,8 +68,8 @@
             <p class="nav-title">Projects</p>
             <img src="assets/heart3.svg">
         </a>
-        <a href="#experience" class="nav-heart">
-            <p class="nav-title">Experience</p>
+        <a href="#experiences" class="nav-heart">
+            <p class="nav-title">Experiences</p>
             <img src="assets/heart1.svg">
         </a>
     </nav>
@@ -56,20 +84,26 @@
     </div>
 
     <section id="whoami" class="section">
-        <div class="container">
-            <h3 class="section-title crimson-pro">Whoami</h3>
-            <p class="para-text">I'm a 16 year-old JC1 student in Singapore, more commonly known as Crystal on online platforms.</p>
-            <p class="para-text">I love creating songs (mainly mandopop and pop-rock) and always finding some way to add orchestral sounds in them!</p>
+        <div class="container whoami-card">
+            <h3 class="section-title crimson-pro">whoami</h3>
+            <p class="para-text">I'm a 16 year-old JC1 student in Singapore, more commonly known as <span class="highlight">Crystal</span> online.
+            I love creating songs (mainly mandopop and pop-rock) often weaving orchestral sounds in them!</p>
             <!-- tags!! -->
-            <p class="para-text">Interest: Software Development, </p>
-            <p class="para-text">Personality: intp, chill, happy-go-lucky</p>
+            <div class="whoami-tags">
+                <span class="tag">#software-dev</span>
+                <span class="tag">#songwriting</span>
+                <span class="tag">#intp</span>
+                <span class="tag">#chill</span>
+                <span class="tag">#happy-go-lucky</span>
+                <span class="tag">#resilient</span>
+                <span class="tag">#optimistic</span>
+            </div>
         </div>
     </section>
 
     <section id="skills" class="section">
         <div class="container">
             <h3 class="section-title crimson-pro">Skills</h3>
-            
         </div>
     </section>
 
@@ -86,10 +120,9 @@
         </div>
     </section>
 
-    <section id="experence" class="section">
+    <section id="experiences" class="section">
         <div class="container">
             <h3 class="section-title crimson-pro">Experiences</h3>
-            
         </div>
     </section>
     <script src="script.js"></script>
