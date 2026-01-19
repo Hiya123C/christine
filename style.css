@@ -124,48 +124,27 @@ body {
     mask-composite: exclude;
 }
 
-/* squiggly line christine */
-.split-title {
+/* sparkle christine text */
+.sparkle-container {
+    position: absolute;
+    pointer-events: none;
+    animation: growAndFade 800ms ease-in-out forwards;
+}
+
+.sparkle-container img {
+  filter: drop-shadow(0 0 8px gold);
+}
+
+.sparkle-text {
     position: relative;
     display: inline-block;
-    font-family: "Crimson Pro", serif;
 }
 
-.split-title::after {
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: var(--dpurple);
-
-    clip-path: inset(55% 0 0 0);
-    pointer-events: none;
+@keyframes growAndFade {
+    0% { transform: scale(0) rotate(0deg); opacity: 1; }
+    50% { transform: scale(1) rotate(90deg); opacity: 1; }
+    100% { transform: scale(0) rotate(180deg); opacity: 0; }
 }
-
-.split-title {
-    clip-path: inset(0 0 45% 0);
-}
-
-/* squiggly divider */
-.split-title::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 52%;
-
-    height: 6px;
-    background-image: url("data:image/svg+xml;utf8,\
-<svg xmlns='http://www.w3.org/2000/svg' width='120' height='6' viewBox='0 0 120 6'>\
-<path d='M0 3 Q 10 0 20 3 T 40 3 T 60 3 T 80 3 T 100 3 T 120 3' \
-stroke='%239fa3e3' stroke-width='1.5' fill='none'/></svg>");
-
-    background-repeat: repeat-x;
-    background-size: 120px 6px;
-    pointer-events: none;
-    opacity: 0.9;
-}
-
 
 /* MY SPIN CUBE HEADER LOL */
 .cube {
@@ -408,7 +387,7 @@ stroke='%239fa3e3' stroke-width='1.5' fill='none'/></svg>");
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 2px dashed var(--dpurple);
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(6px);
