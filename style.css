@@ -124,6 +124,48 @@ body {
     mask-composite: exclude;
 }
 
+/* squiggly line christine */
+.split-title {
+    position: relative;
+    display: inline-block;
+    font-family: "Crimson Pro", serif;
+}
+
+.split-title::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--dpurple);
+
+    clip-path: inset(55% 0 0 0);
+    pointer-events: none;
+}
+
+.split-title {
+    clip-path: inset(0 0 45% 0);
+}
+
+/* squiggly divider */
+.split-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 52%;
+
+    height: 6px;
+    background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='120' height='6' viewBox='0 0 120 6'>\
+<path d='M0 3 Q 10 0 20 3 T 40 3 T 60 3 T 80 3 T 100 3 T 120 3' \
+stroke='%239fa3e3' stroke-width='1.5' fill='none'/></svg>");
+
+    background-repeat: repeat-x;
+    background-size: 120px 6px;
+    pointer-events: none;
+    opacity: 0.9;
+}
+
 
 /* MY SPIN CUBE HEADER LOL */
 .cube {
