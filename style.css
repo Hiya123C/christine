@@ -101,27 +101,9 @@ body {
     position: relative;
     margin-top: 12vh;
     padding: 32px 64px;
+    border: 2px solid var(--lpurple);
     border-radius: 999px;
     background: var(--surface);
-}
-
-#header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    padding: 2px;
-    border-radius: 999px;
-    background: linear-gradient(
-        120deg,
-        var(--fblue),
-        var(--lpurple),
-        var(--sblue)
-    );
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
 }
 
 /* sparkle christine text */
@@ -387,9 +369,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem 2rem;
-    border: 2px dashed var(--dpurple);
+    border: 2px solid var(--dpurple);
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--surface);
     backdrop-filter: blur(6px);
 
     max-width: 50vw;
@@ -419,18 +401,20 @@ body {
     font-size: 0.8rem;
     letter-spacing: 0.04em;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px dashed var(--muted);
     color: var(--white);
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--bg);
+    opacity: 0.8;
     transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .tag:hover {
     transform: translateY(-1px);
-    background: rgba(255, 255, 255, 0.12);
+    background: var(--mid);
+    opacity: 1;
 }
 
-/* mobi;e shit */
+/* mobile shit */
 @media (max-width: 600px) {
   .whoami-card {
     flex-direction: column;
