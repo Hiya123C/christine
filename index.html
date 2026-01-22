@@ -7,7 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="photostrip.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="whoami.css">
+    <link rel="stylesheet" href="skills.css">
 </head>
 <body>
     <!-- bg stars??? -->
@@ -89,7 +95,19 @@
         <div class="container whoami-card">
             <h3 class="section-title crimson-pro">whoami</h3>
             <p class="para-text">I'm a 16 year-old JC1 student in Singapore, more commonly known as <span class="highlight">Crystal</span> online.
-            I love creating songs (mainly mandopop and pop-rock) often weaving orchestral sounds in them!</p>
+            I love creating songs (mainly mandopop and pop-rock) often weaving orchestral sounds in them! oh and building some tech stuff too</p>
+            <!-- the contact logos -->
+            <div id="contact-me">
+                <a href="https://github.com/Hiya123C" target="_blank" class="contact-link">
+                    <img src="logos/github-mark-white.png" style="width: 30px; height: 30px;">
+                    <p class="inter">Hiya123C</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/christine-lee-129b8a243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link">
+                    <img src="logos/InBug-White.png" style="width: 30px; height: 30px;">
+                    <p class="inter">Christine</p>
+                </a>
+            </div>
             <!-- tags!! -->
             <div class="whoami-tags">
                 <span class="tag">#software-dev</span>
@@ -102,32 +120,40 @@
             </div>
         </div>
     </section>
-
+    <br>
     <section id="skills" class="section">
-        <div class="container">
+        <div class="container skills-container">
             <h3 class="section-title crimson-pro">Skills</h3>
-            <h5 class="skills-title">Music</h5>
-            <p class="skills-subtitle">Digital Production</p>
-            <p class="skills-desc">Bandlab, GarangeBand, Musescore, Flat.io</p>
-            <p class="skills-subtitle">Instruments</p>
-            <p class="skills-desc">Piano, Voice, Organ/Electone, Guitar</p>
-
-            <h5 class="skills-title">Tech</h5>
-            <p class="skills-subtitle">iOS Development</p>
-            <p class="skills-desc">Xcode, Swift Playgrounds, Swift, SwiftUI</p>
-            <p class="skills-subtitle">Web Development</p>
-            <p class="skills-desc">HTML, CSS, Javascript</p>
-            <p class="skills-subtitle">Version Control</p>
-            <p class="skills-desc">Github, Git</p>
-            <p class="skills-subtitle">Others</p>
-            <p class="skills-desc">Python, C++, Visual Studio Code</p>
-            
-            <h5 class="skills-title">Others</h5>
-            <p class="skills-subtitle">Design</h5>
-            <p class="skills-desc">Figma, Adobe Fresco</p>
+            <div class="skills-row">
+                <div class="skills-column">
+                    <h5 class="skills-title">Music</h5>
+                    <p class="skills-subtitle">Digital Production</p>
+                    <p class="skills-desc">Bandlab, GarangeBand, Musescore, Flat.io</p>
+                    <p class="skills-subtitle">Instruments</p>
+                    <p class="skills-desc">Piano, Voice, Organ/Electone, Guitar</p>
+                </div>
+                
+                <div class="skills-column">
+                    <h5 class="skills-title">Tech</h5>
+                    <p class="skills-subtitle">iOS Development</p>
+                    <p class="skills-desc">Xcode, Swift Playgrounds, Swift, SwiftUI</p>
+                    <p class="skills-subtitle">Web Development</p>
+                    <p class="skills-desc">HTML, CSS, Javascript</p>
+                    <p class="skills-subtitle">Version Control</p>
+                    <p class="skills-desc">Github, Git</p>
+                    <p class="skills-subtitle">Others</p>
+                    <p class="skills-desc">Python, C++, Visual Studio Code</p>
+                </div>
+                
+                <div class="skills-column" style="border-right: none;">
+                    <h5 class="skills-title">Others</h5>
+                    <p class="skills-subtitle">Design</h5>
+                    <p class="skills-desc">Figma, Adobe Fresco</p>
+                </div>
+            </div>
         </div>
     </section>
-
+    <br>
     <section id="projects" class="section">
         <div class="container">
             <h3 class="section-title crimson-pro">Projects</h3>
@@ -141,27 +167,29 @@
 
                 <h5 class="project-title">Sky</h4>
                 <p class="project-desc"></p>
+                <!-- put a music/quaver logo for music -->
 
                 <!-- i want to kill myself -->
                 <div class="song-card">
-                    <img class="song-cover" src="photos/SL.jpeg" alt="Song cover">
+                    <!-- might need to update the SL.. to fit the night sky theme -->
+                    <img class="song-cover" src="logos/SL.jpeg" alt="Song cover">
                     <div class="music-player">    
                         <div class="title-row">
-                            <h5 class="song-title">Layered bgm</h5>
-                            <span class="dot"></span>
-                            <p class="song-desc">done in 10min, for my friend's game</p>
+                            <h5 class="song-title">匆匆 (Fleeting time)</h5>
+                            <p class="song-desc"></p>
                         </div>
                         
-                        <audio id="audio-BGM" src="music/Layered.m4a"></audio>
+                        <audio id="audio-BGM" src="audio/congcong-audio.m4a"></audio>
+                        <audio id="audio-BGM" src="audio/Congcong-live.mp3"></audio>
                         <input type="range" class="seek-slider" min="0" max="100" value="0">
 
                         <div class="audio-controls">
                             <div class="buttons">
                                 <button class="play-btn">
-                                    <img class="play-btn" src="photos/Play-button.png">
+                                    <img class="play-btn" src="logos/Play-button.png">
                                 </button>
                                 <button class="pause-btn">
-                                    <img class="pause-btn" src="photos/Pause-button.png">
+                                    <img class="pause-btn" src="logos/Pause-button.png">
                                 </button>
                             </div>
                         </div>
@@ -170,10 +198,12 @@
 
                 <h5 class="project-title">ScoreSight</h4>
                 <p class="project-desc"></p>
+                <img class="project-logo" src="logos/scoresight.png">
+                <a href="https://apps.apple.com/us/app/scoresight-learn-music-today/id6738407091"></a>
 
                 <h5 class="project-title">fun personal website</h4>
                 <p class="project-desc"></p>
-                <!-- put a music/quaver logo for music -->
+                <a href="https://hiya123c.github.io/me/"></a>
             </div>
         </div>
     </section>
@@ -188,19 +218,19 @@
                 <img class="experience-logo" src="logos/RIlogo.jpeg">
                 <p class="experience-subtitle">Raffles Institution</p>
                 <p class="experience-year">2026-27</p>
-                <p class="experience-disc">ongoing :)</p>
+                <p class="experience-desc">ongoing :)</p>
             </div>
             <div class="experience-div">
                 <img class="experience-logo" src="logos/RGSlogo.jpeg">
                 <p class="experience-subtitle">Raffles Girl's School (Secondary)</p>
                 <p class="experience-year">2022-25</p>
-                <p class="experience-disc">Results:</p>
-                <ul class="experience-disc">
+                <p class="experience-desc">Results:</p>
+                <ul class="experience-desc">
                     <li>LEAPS: 4/4/5/5, full 2 points</li>
                     <li>O Level Higher Mother Tongue: A1</li>
                 </ul>
-                <p class="experience-disc">Leadership/Roles:</p>
-                <ul class="experience-disc">
+                <p class="experience-desc">Leadership/Roles:</p>
+                <ul class="experience-desc">
                     <li>CCA: Guitar Ensemble, Exco Welfare Head (2024-25)</li>
                     <li>Class Vice Chairperson (2024)</li>
                     <li>AVA Crew (2025)</li>
@@ -209,34 +239,34 @@
             <div class="experience-div">
                 <p class="experience-subtitle">TinkeTanker</p>
                 <p class="experience-year">Dec2025-Jan2026</p>
-                <p class="experience-disc">3-week Internship</p>
+                <p class="experience-desc">3-week Internship</p>
             </div>
             <div class="experience-div">
                 <p class="experience-subtitle">RSAF Office of Strategy</p>
                 <p class="experience-year">Nov 2025</p>
-                <p class="experience-disc">Work Experience Programme</p>
+                <p class="experience-desc">Work Experience Programme</p>
             </div>
             <div class="experience-div">
                 <p class="experience-subtitle">Science Centre (Event Engagement)</p>
                 <p class="experience-year">June 2025</p>
-                <p class="experience-disc">Work Experience Programme</p>
+                <p class="experience-desc">Work Experience Programme</p>
             </div>
             <div class="experience-div">
                 <p class="experience-subtitle">SISTEMIC (by National Junior College)</p>
                 <p class="experience-year">May 2025</p>
-                <p class="experience-disc">biennial international 6 day event</p>
+                <p class="experience-desc">biennial international 6 day event</p>
             </div>
             <div class="experience-div"> 
                 <p class="experience-subtitle">Swift Accelerator Programme</p>
                 <p class="experience-year">2024</p>
-                <p class="experience-disc">developed, designed and uploaded ScoreSight onto the AppStore with 2 other teammates</p>
+                <p class="experience-desc">developed, designed and uploaded ScoreSight onto the AppStore with 2 other teammates</p>
                 <!-- click on appstore or smth -->
             </div>
             <div class="experience-div">
                 <p class="experience-subtitle">Nanyang Academy of Fine Arts (NAFA)</p>
                 <p class="experience-year">2018-21</p>
                 <!-- fact check start year -->
-                <ul class="experience-disc">
+                <ul class="experience-desc">
                     <li>Grade 8 Piano</li>
                     <li>Grade 5 Music Theory</li>
                     <li>Drama (English and Chinese)</li>
@@ -249,19 +279,19 @@
                 <img class="experience-logo" src="logos/abrsm-prac.png">
                 <p class="experience-subtitle">Grade 8 ABRSM Piano</p>
                 <p class="experience-year">Aug 2021</p>
-                <p class="experience-disc">Distinction, 143/150</p>
+                <p class="experience-desc">Distinction, 143/150</p>
             </div>
             <div class="experience-div">
                 <img class="experience-logo" src="logos/abrsm-prac.png">
                 <p class="experience-subtitle">Grade 6 ABRSM Piano</p>
                 <p class="experience-year">2019</p>
-                <p class="experience-disc">Distinction, 130/150</p>
+                <p class="experience-desc">Distinction, 130/150</p>
             </div>
             <div class="experience-div">
                 <img class="experience-logo" src="logos/abrsm-prac.png">
                 <p class="experience-subtitle">Grade 5 ABRSM Theory</p>
                 <p class="experience-year">2019</p>
-                <p class="experience-disc">Distinction, 92/150</p>
+                <p class="experience-desc">Distinction, 92/150</p>
             </div>
             <div class="experience-div">
                 <a href="https://www.credly.com/badges/be7da5ab-046c-41ff-a4e7-6835836a1b11/public_url">
@@ -283,52 +313,52 @@
             <div class="experience-div">
                 <p class="experience-subtitle">新空下 (Xin Kong Xia) Xin Yao Competition</p>
                 <p class="experience-year">2025</p>
-                <p class="experience-disc">2nd Place under Creative Songwriting Track</p>
+                <p class="experience-desc">2nd Place under Creative Songwriting Track</p>
             </div>
             <div class="experience-div">
                 <p class="experience-subtitle">SYF Youth Station Project</p>
                 <p class="experience-year">2025</p>
-                <p class="experience-disc">Select (Open, Produced Track)</p>
+                <p class="experience-desc">Select (Open, Produced Track)</p>
             </div>
             <div class="experience-div">
                 <p class="experience-subtitle">SISTEMIC Design and Build Challenge</p>
                 <p class="experience-year">2025</p>
-                <p class="experience-disc">Gold</p>
+                <p class="experience-desc">Gold</p>
             </div>
             <div class="experience-div">
                 <p class="experience-subtitle">National Cybersecurity Olympiad</p>
                 <p class="experience-year">2025</p>
-                <p class="experience-disc">Honourable Mention</p>
+                <p class="experience-desc">Honourable Mention</p>
             </div>
             <div class="experience-div">
                 <p class="experience-subtitle">National Text Chinese Recital Competition (Team)</p>
                 <p class="experience-year">2025</p>
-                <p class="experience-disc">Bronze</p>
+                <p class="experience-desc">Bronze</p>
             </div>
             <div class="experience-div">
                 <p class="experience-subtitle">Singapore Junior Biology Olympiad</p>
                 <p class="experience-year">2024</p>
-                <p class="experience-disc">Bronze</p>
+                <p class="experience-desc">Bronze</p>
             </div>
             <div class="experience-div">
                 <p class="experience-subtitle">National Schools Literature Festival (Group)</p>
                 <p class="experience-year">2023</p>
-                <p class="experience-disc">Bronze</p>
+                <p class="experience-desc">Bronze</p>
             </div>
             <div class="experience-div">
                 <p class="experience-subtitle">YCEP CTF</p>
                 <p class="experience-year">June 2023</p>
-                <p class="experience-disc">3rd Place</p>
+                <p class="experience-desc">3rd Place</p>
             </div>
             <div class="experience-div">
                 <p class="experience-subtitle">National Text Chinese Recital Competition (Team)</p>
                 <p class="experience-year">2022</p>
-                <p class="experience-disc">Bronze</p>
+                <p class="experience-desc">Bronze</p>
             </div>
             <div class="experience-div">
                 <p class="experience-subtitle">History National Library Board (Group)</p>
                 <p class="experience-year">2022</p>
-                <p class="experience-disc">2nd Place</p>
+                <p class="experience-desc">2nd Place</p>
             </div>
 
             <!-- misc -->
@@ -336,19 +366,19 @@
             <div class="experience-div">
                 <p class="experience-subtitle">Carmee Lim Art Scholarship</p>
                 <p class="experience-year">2025</p>
-                <p class="experience-disc">in recognition of my contribution to the performing/visual arts</p>
+                <p class="experience-desc">in recognition of my contribution to the performing/visual arts</p>
             </div>
             <div class="experience-div">
                 <p class="experience-subtitle">Batch Song'28</p>
                 <p class="experience-year">2025</p>
-                <p class="experience-disc">wrote my school's 2026 Batch Song: "Dream, Fly, Be"</p>
+                <p class="experience-desc">composed my secondary school's 2026 Batch Song: "Dream, Fly, Be"</p>
             </div>
 
             <!-- shit rlly need to check this, like actually. um haha -->
             <div class="experience-div">
                 <p class="experience-subtitle">MOE EAGLES</p>
                 <p class="experience-year">2024 & 2025</p>
-                <p class="experience-disc">Edusave Award for Achievement, Good Leadership and Service</p>
+                <p class="experience-desc">Edusave Award for Achievement, Good Leadership and Service</p>
             </div>
             <!-- shit rlly need to check this, like actually. um haha -->
             
@@ -356,5 +386,6 @@
     </section>
     <script src="script.js"></script>
     <script src="sparkle.js"></script>
+    <script src="song.js"></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+/* PHOTOS */
+.photo-strip {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.photo {
+    position: relative;
+}
+
+.photo img {
+    width: 180px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    transform: rotate(-4deg);
+    transition: transform 0.35s ease;
+}
+
+.photo:nth-child(even) img {
+    transform: rotate(4deg);
+}
+
+.photo:hover img {
+    transform: rotate(0deg) scale(1.1);
+}
+
+.photo-label {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+
+    padding: 0.35rem 0.7rem;
+    font-size: 0.7rem;
+
+    color: var(--white);
+    background: var(--surface);
+    border: 1px dashed var(--muted);
+    border-radius: 8px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+}
+
+.photo:hover .photo-label {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
