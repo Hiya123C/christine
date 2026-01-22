@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="whoami.css">
     <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="songs.css">
+    <link rel="stylesheet" href="project.css">
 </head>
 <body>
     <!-- bg stars??? -->
@@ -49,7 +51,7 @@
         </div>
         <div class="photo">
             <img src="photos/fun1.jpg" alt="pic7">
-            <span class="photo-label">Korea, Seoul</span>
+            <span class="photo-label">Seoul, Korea</span>
         </div>
     </div>
 
@@ -92,7 +94,7 @@
     <br>
 
     <section id="whoami" class="section">
-        <div class="container whoami-card">
+        <div class="whoami-container">
             <h3 class="section-title crimson-pro">whoami</h3>
             <p class="para-text">I'm a 16 year-old JC1 student in Singapore, more commonly known as <span class="highlight">Crystal</span> online.
             I love creating songs (mainly mandopop and pop-rock) often weaving orchestral sounds in them! oh and building some tech stuff too</p>
@@ -106,6 +108,12 @@
                 <a href="https://www.linkedin.com/in/christine-lee-129b8a243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link">
                     <img src="logos/InBug-White.png" style="width: 30px; height: 30px;">
                     <p class="inter">Christine</p>
+                </a>
+
+                <!-- update mail link -->
+                <a href="https://www.linkedin.com/in/christine-lee-129b8a243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link">
+                    <img src="logos/mail.png" style="width: 35px; height: 35px;">
+                    <p class="inter">Crystal</p>
                 </a>
             </div>
             <!-- tags!! -->
@@ -122,11 +130,11 @@
     </section>
     <br>
     <section id="skills" class="section">
-        <div class="container skills-container">
+        <div class="skills-container">
             <h3 class="section-title crimson-pro">Skills</h3>
             <div class="skills-row">
                 <div class="skills-column">
-                    <h5 class="skills-title">Music</h5>
+                    <h5 class="skills-title" style="color: var(--sblue)">Music</h5>
                     <p class="skills-subtitle">Digital Production</p>
                     <p class="skills-desc">Bandlab, GarangeBand, Musescore, Flat.io</p>
                     <p class="skills-subtitle">Instruments</p>
@@ -134,7 +142,7 @@
                 </div>
                 
                 <div class="skills-column">
-                    <h5 class="skills-title">Tech</h5>
+                    <h5 class="skills-title" style="color: var(--tblue)">Tech</h5>
                     <p class="skills-subtitle">iOS Development</p>
                     <p class="skills-desc">Xcode, Swift Playgrounds, Swift, SwiftUI</p>
                     <p class="skills-subtitle">Web Development</p>
@@ -145,71 +153,119 @@
                     <p class="skills-desc">Python, C++, Visual Studio Code</p>
                 </div>
                 
-                <div class="skills-column" style="border-right: none;">
-                    <h5 class="skills-title">Others</h5>
+                <div class="skills-column">
+                    <h5 class="skills-title" style="color: var(--fblue)">Others</h5>
                     <p class="skills-subtitle">Design</h5>
                     <p class="skills-desc">Figma, Adobe Fresco</p>
+                    <p class="skills-subtitle">Presentation & Performance</h5>
+                    <p class="skills-desc">Public speaking, Storytelling, Stage Presence</p>
                 </div>
             </div>
         </div>
     </section>
     <br>
     <section id="projects" class="section">
-        <div class="container">
+        <div class="project-container">
             <h3 class="section-title crimson-pro">Projects</h3>
             <!-- split music and tech -->
-            <div class="project-card">
-                <h5 class="project-title">匆匆 (Fleeting time)</h4>
-                <p class="project-desc"></p>
+            <!-- put a music/quaver logo for music -->
+            <!-- i want to kill myself -->
 
-                <h5 class="project-title">Dream, Fly, Be</h4>
-                <p class="project-desc"></p>
+            <div class="song-card">
+                <!-- might need to update the SL.. to fit the night sky theme -->
+                <img class="song-cover" src="logos/SL.jpeg" alt="Song cover">
+                <div class="music-player">    
+                    <div class="title-row">
+                        <h5 class="song-title">匆匆 (Fleeting time)</h5>
+                        <p class="song-desc">chinese ballad</p>
+                    </div>
+                    <p class="song-desc">Audio:</p>
+                    <audio id="audio-BGM" src="audio/congcong-audio.m4a"></audio>
+                    <input type="range" class="seek-slider" min="0" max="100" value="0">
+                    <p class="song-desc">Live:</p>
+                    <audio id="audio-BGM" src="audio/Congcong-live.mp3"></audio>
+                    <input type="range" class="seek-slider" min="0" max="100" value="0">
 
-                <h5 class="project-title">Sky</h4>
-                <p class="project-desc"></p>
-                <!-- put a music/quaver logo for music -->
-
-                <!-- i want to kill myself -->
-                <div class="song-card">
-                    <!-- might need to update the SL.. to fit the night sky theme -->
-                    <img class="song-cover" src="logos/SL.jpeg" alt="Song cover">
-                    <div class="music-player">    
-                        <div class="title-row">
-                            <h5 class="song-title">匆匆 (Fleeting time)</h5>
-                            <p class="song-desc"></p>
-                        </div>
-                        
-                        <audio id="audio-BGM" src="audio/congcong-audio.m4a"></audio>
-                        <audio id="audio-BGM" src="audio/Congcong-live.mp3"></audio>
-                        <input type="range" class="seek-slider" min="0" max="100" value="0">
-
-                        <div class="audio-controls">
-                            <div class="buttons">
-                                <button class="play-btn">
-                                    <img class="play-btn" src="logos/Play-button.png">
-                                </button>
-                                <button class="pause-btn">
-                                    <img class="pause-btn" src="logos/Pause-button.png">
-                                </button>
-                            </div>
+                    <div class="audio-controls">
+                        <div class="buttons">
+                            <button class="play-btn">
+                                <img class="play-btn" src="logos/Play-button.png">
+                            </button>
+                            <button class="pause-btn">
+                                <img class="pause-btn" src="logos/Pause-button.png">
+                            </button>
                         </div>
                     </div>
                 </div>
-
-                <h5 class="project-title">ScoreSight</h4>
-                <p class="project-desc"></p>
-                <img class="project-logo" src="logos/scoresight.png">
-                <a href="https://apps.apple.com/us/app/scoresight-learn-music-today/id6738407091"></a>
-
-                <h5 class="project-title">fun personal website</h4>
-                <p class="project-desc"></p>
-                <a href="https://hiya123c.github.io/me/"></a>
             </div>
+
+            <div class="song-card">
+                <!-- might need to update the SL.. to fit the night sky theme -->
+                <img class="song-cover" src="logos/SL.jpeg" alt="Song cover">
+                <div class="music-player">    
+                    <div class="title-row">
+                        <h5 class="song-title">Dream, Fly, Be</h5>
+                        <p class="song-desc"></p>
+                    </div>
+                    
+                    <p class="song-desc">Ver 1:</p>
+                    <audio id="audio-BGM" src="audio/dreamflybe.mp3"></audio>
+                    <input type="range" class="seek-slider" min="0" max="100" value="0">
+                    <p class="song-desc">Ver 2:</p>
+                    <audio id="audio-BGM" src="audio/dreamflybe.mp3"></audio>
+                    <input type="range" class="seek-slider" min="0" max="100" value="0">
+
+                    <div class="audio-controls">
+                        <div class="buttons">
+                            <button class="play-btn">
+                                <img class="play-btn" src="logos/Play-button.png">
+                            </button>
+                            <button class="pause-btn">
+                                <img class="pause-btn" src="logos/Pause-button.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="song-card">
+                <!-- might need to update the SL.. to fit the night sky theme -->
+                <img class="song-cover" src="logos/SL.jpeg" alt="Song cover">
+                <div class="music-player">    
+                    <div class="title-row">
+                        <h5 class="song-title">Sky</h5>
+                        <p class="song-desc">song on encouragement (kinda went crazy with the orchestral instru for this one...)</p>
+                    </div>
+                    
+                    <audio id="audio-BGM" src="audio/Sky.m4a"></audio>
+                    <input type="range" class="seek-slider" min="0" max="100" value="0">
+
+                    <div class="audio-controls">
+                        <div class="buttons">
+                            <button class="play-btn">
+                                <img class="play-btn" src="logos/Play-button.png">
+                            </button>
+                            <button class="pause-btn">
+                                <img class="pause-btn" src="logos/Pause-button.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="project-title">ScoreSight</h4>
+            <p class="project-desc"></p>
+            <img class="project-logo" src="logos/scoresight.png">
+            <a href="https://apps.apple.com/us/app/scoresight-learn-music-today/id6738407091"></a>
+
+            <h5 class="project-title">fun personal website</h4>
+            <p class="project-desc"></p>
+            <a href="https://hiya123c.github.io/me/"></a>
         </div>
     </section>
 
     <section id="experiences" class="section">
-        <div class="container">
+        <div class="experience-container">
             <h3 class="section-title crimson-pro">Experiences</h3>
 
             <!-- edu and prog -->
@@ -260,6 +316,12 @@
                 <p class="experience-subtitle">Swift Accelerator Programme</p>
                 <p class="experience-year">2024</p>
                 <p class="experience-desc">developed, designed and uploaded ScoreSight onto the AppStore with 2 other teammates</p>
+                <!-- click on appstore or smth -->
+            </div>
+            <div class="experience-div"> 
+                <p class="experience-subtitle">Voices of Singapore Concert Choir</p>
+                <p class="experience-year">2022-23</p>
+                <p class="experience-desc">performed under VOSCC in Carnegie Hall, NYC, USA</p>
                 <!-- click on appstore or smth -->
             </div>
             <div class="experience-div">

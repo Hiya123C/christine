@@ -1,0 +1,135 @@
+.song-card {
+    display: flex;
+    align-items: center;
+    background-color: #5c5552ff;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.song-cover {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.song-cover:hover {
+  border-color: var(--yellow);
+}
+
+.music-player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    gap: 5px;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.song-title {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.song-desc {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.play-btn, .pause-btn {
+    all: unset;
+    cursor: pointer;
+    /* font-size: 1.5rem; */
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 50px;
+    filter: brightness(0.9);
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.play-btn:hover,
+.pause-btn:hover {
+  transform: scale(1.15);
+  filter: brightness(1.2) drop-shadow(0 0 6px var(--yellow));
+}
+
+/* SLIDERRRR CUSTOMISATION */
+.seek-slider {
+  -webkit-appearance: none;
+  width: 300px;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  background: rgba(180, 195, 255, 0.25);
+  outline: none;
+  margin-bottom: 12px;
+}
+
+.seek-slider::-webkit-slider-runnable-track {
+  height: 6px;
+  background: linear-gradient(
+    90-deg,
+    var(--lpurple),
+    var(--dyellow)
+  );
+  border-radius: 5px;
+}
+
+.seek-slider::-moz-range-track {
+  height: 6px;
+  background: linear-gradient(
+    90-deg,
+    var(--lpurple),
+    var(--dyellow)
+  );
+  border-radius: 5px;
+}
+
+.seek-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  background: #6f78ff;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid white;
+  transition: 0.15s;
+  margin-top: -8px; /* centers thumb with track */
+}
+
+.seek-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #6f78ff;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid white;
+  transition: 0.15s;
+}
+
+.seek-slider:hover::-webkit-slider-thumb {
+  transform: scale(1.1);
+}
+
+.seek-slider:hover::-moz-range-thumb {
+  transform: scale(1.1);
+}
+
+

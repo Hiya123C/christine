@@ -13,13 +13,26 @@
   color: inherit;
 }
 
-.contact-link p {
-  margin: 0;
+.contact-link img {
+  transition: filter 0.25s ease, transform 0.25s ease;
 }
 
 .contact-link:hover img {
   transform: scale(1.05);
   transition: 0.2s ease;
+
+  filter: brightness(0)
+  saturate(100%)
+  invert(78%)
+  sepia(14%)
+  saturate(7494%)
+  hue-rotate(6deg)
+  brightness(103%)
+  contrast(97%);
+}
+
+.contact-link p {
+  margin: 0;
 }
 
 .contact-link:hover p {
@@ -28,15 +41,15 @@
 }
 
 /* WHOAMI */
-.whoami-card {
+.whoami-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem 2rem;
   border: 2px dashed var(--purple);
   border-radius: 18px;
-  background: var(--surface);
-  backdrop-filter: blur(6px);
+  background: color-mix(in srgb, var(--surface) 65%, transparent);
+  backdrop-filter: blur(2px);
 
   max-width: 50vw;
   max-height: 60vh;
@@ -73,7 +86,7 @@
 }
 
 .tag:hover {
-    transform: translateY(-1px);
-    background: var(--mid);
-    opacity: 1;
+  transform: translateY(-1px);
+  background: var(--mid);
+  opacity: 1;
 }
