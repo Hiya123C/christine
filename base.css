@@ -3,16 +3,20 @@
   --bg: #0f1224;
   --mid: #171a34;
   --surface: #1c1f42;
+  --glass: #0c1445;
 
   --fblue: #b8d8ff;
   --sblue: #9cc9f5;
   --tblue: #7fb3ea;
   --lblue: #5a9bd6;
+  --dblue: #242c5a;
 
   --lpurple: #c6c3f7;
   --purple: #b9abe8;
   --dpurple: #9fa3e3;
+  --glassviolet: #B7A2CC;
 
+  --lyellow: #FFED8D;
   --yellow: #FFD700;
   --gold: #EFBF04;
   --dyellow: #FFD9004C;
@@ -22,6 +26,36 @@
   --muted: #9aa0c8;
   --black: #0b0d1a;
 }
+
+/* this is torture */
+.light-mode {
+  --bg: #f2c1d1;
+  --mid: #e8a9c2;
+  --surface: #f7d6c6;
+  --glass: #e6b2a8;
+
+  --fblue: #7fa4e8;
+   --sblue: #8fb4f2;
+  --tblue: #a2c2f5;
+  --lblue: #b9d4fa;
+  --dblue: #dbe7ff;
+
+  --lpurple: #f1d6eb;
+  --purple: #e6c2dc;
+  --dpurple: #d6acd1;
+  --glassviolet: #efd2e6;
+
+  --lyellow: #fff3b0;
+  --yellow: #ffd56a;
+  --gold: #f2b705;
+  --dyellow: #ffd56a66;
+
+  /* neutrals — inverted roles */
+  --white: #2a1f2f;   /* primary text */
+  --muted: #5f6391;   /* secondary text (slightly darker) */
+  --black: #ffffff;   /* base background */
+}
+
 
 html, body {
     height: 100%;
@@ -40,6 +74,7 @@ body {
     align-items: center;
 
     overflow-x: hidden;
+    cursor: url("assets/cursor-star.svg") 8 8, auto;
 }
 
 /* STAR BG */
@@ -62,6 +97,61 @@ body {
     z-index: 0;
 }
 
+/* CURSOR grr */
+.cursor-trail {
+    position: fixed;
+    width: 7px;
+    height: 7px;
+    background-color: var(--lyellow);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: fadeOut 0.5s forwards;
+    z-index: 1000;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+/* light dark toggle */
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--muted);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 1.5vh;
+    right: 3vw;   
+}
+
+.toggle-icon {
+    fill: var(--lpurple);
+}
+
+#theme-switch .toggle-icon:first-child {
+    display: none;
+}
+
+.light-mode #theme-switch .toggle-icon:last-child {
+    display: none;
+}
+
+.light-mode #theme-switch .toggle-icon:first-child {
+    display: block; 
+}
+
+
+
+
 /* FONTS AND STYLES */
 .crimson-pro {
   font-family: "Crimson Pro", serif;
@@ -82,7 +172,7 @@ body {
 }
 
 .highlight {
-    color: var(--lpurple);
+    color: var(--fblue);
     font-weight: 500;
 }
 

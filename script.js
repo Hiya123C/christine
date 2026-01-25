@@ -20,3 +20,42 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+
+// cursor trail
+document.addEventListener('mousemove', (e) => {
+    const dot = document.createElement('div');
+    dot.classList.add('cursor-trail');
+    document.body.appendChild(dot);
+
+    dot.style.left = e.clientX + 'px';
+    dot.style.top = e.clientY + 'px';
+
+    dot.style.opacity = 1;
+
+    dot.addEventListener('animationend', () => {
+        dot.remove();
+    });
+});
+
+// light darkmode shit
+let lightmode = localStorage.getItem('light-mode');
+const themeSwitch = document.getElementById('theme-switch');
+
+const enableLightmode = () => {
+    document.body.classList.add('light-mode');
+    localStorage.setItem('light-mode', 'active')
+}
+
+const disableLightmode = () => {
+    document.body.classList.remove('light-mode');
+    localStorage.setItem('light-mode', 'null');
+}
+
+if (lightmode === "active") enableLightmode()
+
+
+themeSwitch.addEventListener("click", () => {
+    lightmode = localStorage.getItem('light-mode');
+    lightmode !== "active" ? enableLightmode() : disableLightmode();
+});

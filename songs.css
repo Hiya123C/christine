@@ -1,66 +1,70 @@
 .song-card {
-    display: flex;
-    align-items: center;
-    background-color: #5c5552ff;
-    border-radius: 15px;
-    padding: 15px 20px;
-    margin: 20px 0;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dblue);
+  border-radius: 15px;
+  gap: 20px;
+  padding: 10px;
 }
 
+/* THIS IS THE IMG SL, not the entire thing omg my names are so confusing */
 .song-cover {
-    width: 100px;
-    height: 100px;
-    border-radius: 15px;
-    object-fit: cover;
-}
-
-.song-cover:hover {
-  border-color: var(--yellow);
+  width: 10vw;
+  border-radius: 15px;
+  object-fit: cover;
 }
 
 .music-player {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 600px;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .title-row {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .song-title {
-    margin: 0;
-    font-size: 1.2rem;
-    color: var(--white);
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--white);
 }
 
 .song-desc {
-    margin: 0;
-    font-size: 0.9rem;
-    color: var(--muted);
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--lpurple);
+}
+
+.version-select {
+  background: transparent;
+  border: 1px solid var(--lblue);
+  color: var(--white);
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 8px;
 }
 
 .buttons {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .play-btn, .pause-btn {
-    all: unset;
-    cursor: pointer;
-    /* font-size: 1.5rem; */
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    margin-right: 50px;
-    filter: brightness(0.9);
-    transition: transform 0.2s ease, filter 0.2s ease;
+  all: unset;
+  cursor: pointer;
+  /* font-size: 1.5rem; */
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 50px;
+  filter: brightness(0.9);
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .play-btn:hover,

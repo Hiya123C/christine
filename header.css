@@ -3,9 +3,9 @@
     position: relative;
     margin-top: 8vh;
     padding: 32px 64px;
-    border: 4px dashed var(--lpurple);
+    border: 4px dashed var(--fblue);
     border-radius: 999px;
-    background: color-mix(in srgb, var(--surface) 65%, transparent);
+    background: color-mix(in srgb, var(--glass) 65%, transparent);
     backdrop-filter: blur(1px);
 }
 
