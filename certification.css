@@ -1,0 +1,56 @@
+.cert-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    justify-content: flex-start;
+}
+
+.cert-card {
+    flex: 1 1 18rem;
+    padding: 1.4rem 1.2rem;
+    border-radius: 18px;
+    background: linear-gradient(
+        160deg,
+        var(--surface),
+        var(--glass)
+    );
+    border: 1px solid var(--glassviolet);
+    box-shadow: 0 6px 16px rgba(15, 18, 36, 0.5);
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+
+    max-width: 10vw;
+    max-height: 30vh;
+}
+
+.cert-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(15, 18, 36, 0.7);
+}
+
+.cert-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+        circle at top,
+        var(--lpurple),
+        transparent 60%
+    );
+    opacity: 0.06;
+    pointer-events: none;
+}
+
+@media (max-width: 700px) {
+    .cert-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cert-card {
+        flex: 1 1 90%;
+    }
+}

@@ -1,0 +1,56 @@
+/* primary on the left */
+.edu-primary {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* ?need padding top? */
+}
+
+.edu-card.major {
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background: linear-gradient(
+        160deg,
+        var(--surface),
+        var(--glass)
+    );
+    box-shadow: 0 8px 20px var(--black);
+    border: 1px solid var(--glassviolet);
+
+    transition: transform 0.20s ease;
+}
+
+.edu-card.major:hover {
+    transform: translateY(-4px);
+}
+
+/* secondary on the right */
+.edu-secondary {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 0.6rem;
+}
+
+.edu-card.minor {
+  padding: 0.9rem 1.2rem;
+  border-radius: 14px;
+
+  background: var(--mid);
+  border: 1px dashed --muted;
+
+  transition: background 0.2s ease;
+}
+
+.edu-card.minor:hover {
+  background: var(--surface);
+}
+
+.edu-card.minor .experience-subtitle {
+  font-size: 0.95rem;
+  font-weight: 450;
+}
+
+.edu-card.minor .experience-desc {
+  font-size: 0.8rem;
+}

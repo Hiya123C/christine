@@ -16,7 +16,14 @@
     margin-left: 9vw;
     width: 2px;
     height: 75vh;
-    background-color: var(--muted);
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        var(--dpurple),
+        var(--glassviolet),
+        var(--dpurple),
+        transparent
+    );
     z-index: -1;
 }
 
