@@ -34,26 +34,24 @@
   --surface: #f7d6c6;
   --glass: #e6b2a8;
 
-  --fblue: #7fa4e8;
-   --sblue: #8fb4f2;
+  --fblue: #6098ff;
   --tblue: #a2c2f5;
-  --lblue: #b9d4fa;
   --dblue: #dbe7ff;
 
-  --lpurple: #f1d6eb;
-  --purple: #e6c2dc;
-  --dpurple: #d6acd1;
-  --glassviolet: #efd2e6;
+  --lpurple: #5f6391;
+  --purple: #8fb4f2;
+  --dpurple: #a2c2f5;
+  --glassviolet: #B7A2CC;
 
-  --lyellow: #fff3b0;
-  --yellow: #ffd56a;
-  --gold: #f2b705;
-  --dyellow: #ffd56a66;
+  --lyellow: #ffd56a66;
+  --yellow: #FFDE21;
+  --gold: #eba01d;
+  --dyellow: #fff3b0;
 
-  /* neutrals — inverted roles */
-  --white: #2a1f2f;   /* primary text */
-  --muted: #5f6391;   /* secondary text (slightly darker) */
-  --black: #ffffff;   /* base background */
+  /* neutrals */
+  --white: #2a1f2f;
+  --muted: #5f6391;
+  --black: #ffffff;
 }
 
 
@@ -177,8 +175,7 @@ body {
 }
 
 .section-title {
-    color: var(--yellow);
-    text-shadow: 0 0 20px var(--gold);
+    color: var(--gold);
     font-size: 3rem;
     margin: 0;
     /* border: 2px solid red; */

@@ -14,7 +14,7 @@
         var(--surface),
         var(--glass)
     );
-    box-shadow: 0 8px 20px var(--black);
+    box-shadow: 0 8px 10px var(--black);
     border: 1px solid var(--glassviolet);
 
     transition: transform 0.20s ease;

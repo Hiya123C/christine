@@ -23,12 +23,12 @@
 
   filter: brightness(0)
   saturate(100%)
-  invert(78%)
-  sepia(14%)
-  saturate(7494%)
-  hue-rotate(6deg)
-  brightness(103%)
-  contrast(97%);
+  invert(51%)
+  sepia(91%)
+  saturate(429%)
+  hue-rotate(360deg)
+  brightness(93%)
+  contrast(89%);
 }
 
 .contact-link p {

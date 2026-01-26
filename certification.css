@@ -16,7 +16,7 @@
         var(--glass)
     );
     border: 1px solid var(--glassviolet);
-    box-shadow: 0 6px 16px rgba(15, 18, 36, 0.5);
+    box-shadow: 0 6px 16px var(--black);
     text-align: center;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     position: relative;
