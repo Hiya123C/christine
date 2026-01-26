@@ -41,21 +41,32 @@ document.addEventListener('mousemove', (e) => {
 // light darkmode shit
 let lightmode = localStorage.getItem('light-mode');
 const themeSwitch = document.getElementById('theme-switch');
+const covers = document.querySelectorAll(".song-cover");
+
+const updateCover = () => {
+    covers.forEach(cover => {
+        cover.src = document.body.classList.contains("light-mode") ? "logos/light-SL.jpeg" : "logos/dark-SL.jpg";
+    })
+}
 
 const enableLightmode = () => {
     document.body.classList.add('light-mode');
     localStorage.setItem('light-mode', 'active')
+    updateCover();
 }
 
 const disableLightmode = () => {
     document.body.classList.remove('light-mode');
     localStorage.setItem('light-mode', 'null');
+    updateCover();
 }
 
-if (lightmode === "active") enableLightmode()
-
+if (lightmode === "active") {
+    enableLightmode();
+} else {
+    disableLightmode();
+}
 
 themeSwitch.addEventListener("click", () => {
-    lightmode = localStorage.getItem('light-mode');
-    lightmode !== "active" ? enableLightmode() : disableLightmode();
+    document.body.classList.contains("light-mode") ? disableLightmode() : enableLightmode();
 });

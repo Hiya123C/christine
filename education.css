@@ -9,7 +9,7 @@
 .edu-primary {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
     /* ?need padding top? */
 }
 
@@ -35,7 +35,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
-    padding-top: 0.6rem;
 }
 
 .edu-card.minor {

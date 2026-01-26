@@ -23,26 +23,36 @@
 .experience-title {
   font-size: 1.5rem;
   font-weight: 400;
+  font-family: "Crimson Pro";
   color: var(--fblue);
   margin: 1rem 0;
 }
 
 .experience-subtitle {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "Inter";
   margin: 0;
   color: var(--white);
 }
 
 .experience-year {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--muted);
-    margin: 10px 0;
+    margin: 5px 0;
     font-family: "Inter";
 }
 
 .experience-desc,
 .experience-desc li {
+  font-size: 0.8rem;
+  color: var(--lpurple);
+  line-height: 1.5;
+  font-family: "Inter";
+  margin: 0;
+}
+
+.edu-experience-desc,
+.edu-experience-desc li {
   font-size: 1rem;
   color: var(--lpurple);
   line-height: 1.5;
