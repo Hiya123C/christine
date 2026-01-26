@@ -34,7 +34,7 @@
 .edu-secondary {
     display: flex;
     flex-direction: column;
-    gap: 0.7rem;
+    gap: 0.5rem;
 }
 
 .edu-card.minor {

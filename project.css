@@ -11,21 +11,61 @@
     min-width: 50vw;
     max-width: 50vw;
 }
-
+/* for the songs */
 .song-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
-
+/* for the tech */
 .project-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
+.project-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: var(--blue);
+    padding: 10px 25px;
+    border: 2px solid var(--tblue);
+    border-radius: 20px;
+
+    transition: transform 0.2s ease;
+}
 
 .project-column:hover {
     transform: translateY(-2px);
     border-color: var(--gold);
+}
+
+.project-mini-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.project-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* FONT... */
+
+.project-title {
+  font-size: 2rem;
+  font-family: "Crimson Pro";
+  color: var(--white);
+  margin: auto 2rem;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  font-family: "Inter";
+  color: var(--white);
 }
