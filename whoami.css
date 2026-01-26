@@ -53,6 +53,8 @@
 
   max-width: 50vw;
   max-height: 60vh;
+
+  overflow-y: auto;
 }
 
 .whoami-card h3 {

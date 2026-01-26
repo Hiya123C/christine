@@ -55,6 +55,12 @@
   --black: #ffffff;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 
 html, body {
     height: 100%;
@@ -210,6 +216,8 @@ hr.dotted {
         width: 140px;
     }
 }
+
+
 
 /* mobile */
 @media (max-width: 600px) {

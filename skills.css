@@ -40,6 +40,8 @@
     var(--dpurple),
     transparent
   );
+
+  pointer-events: none;
 }
 
 .skills-column:last-child::after {
