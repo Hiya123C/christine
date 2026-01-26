@@ -69,3 +69,8 @@
   font-family: "Inter";
   color: var(--white);
 }
+
+.project-column a {
+  text-decoration: none;
+  color: inherit;
+}

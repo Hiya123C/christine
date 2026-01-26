@@ -36,7 +36,7 @@
 }
 
 .contact-link:hover p {
-  color: var(--gold);
+  color: var(--pyellow);
   transition: 0.2s ease;
 }
 
