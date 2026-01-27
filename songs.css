@@ -34,7 +34,7 @@
 .song-desc {
   margin: 0;
   font-size: 0.9rem;
-  color: var(--lpurple);
+  color: var(--glassviolet);
 }
 
 .version-select {
@@ -75,7 +75,7 @@
   width: 100%;
   height: 6px;
   border-radius: 5px;
-  background: var(--purple);
+  background: var(--glassviolet);
   outline: none;
   margin-bottom: 12px;
 }
@@ -84,7 +84,7 @@
   height: 6px;
   background: linear-gradient(
     90deg,
-    var(--lpurple),
+    var(--glassviolet),
     var(--dyellow)
   );
   border-radius: 5px;
@@ -94,7 +94,7 @@
   height: 6px;
   background: linear-gradient(
     90deg,
-    var(--lpurple),
+    var(--glassviolet),
     var(--dyellow)
   );
   border-radius: 5px;

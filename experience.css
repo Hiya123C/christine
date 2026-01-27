@@ -4,7 +4,7 @@
   padding: 1rem 2rem;
   border: 2px dashed var(--dpurple);
   border-radius: 18px;
-  background: color-mix(in srgb, var(--surface) 65%, transparent);
+  background: color-mix(in srgb, var(--sectionbg) 65%, transparent);
   backdrop-filter: blur(2px);
 
   max-width: 50vw;
@@ -30,7 +30,7 @@
 
 .experience-subtitle {
   font-size: 1rem;
-  font-family: "Inter";
+  font-family: "Lexend";
   margin: 0;
   color: var(--white);
 }
@@ -39,23 +39,23 @@
     font-size: 0.9rem;
     color: var(--muted);
     margin: 5px 0;
-    font-family: "Inter";
+    font-family: "Lexend";
 }
 
 .experience-desc,
 .experience-desc li {
   font-size: 0.8rem;
-  color: var(--lpurple);
+  color: var(--edutext);
   line-height: 1.5;
-  font-family: "Inter";
+  font-family: "Lexend";
   margin: 0;
 }
 
 .edu-experience-desc,
 .edu-experience-desc li {
   font-size: 1rem;
-  color: var(--lpurple);
+  color: var(--edutext);
   line-height: 1.5;
-  font-family: "Inter";
+  font-family: "Lexend";
   margin: 0;
 }

@@ -41,7 +41,7 @@
     font-size: 0.7rem;
 
     color: var(--white);
-    background: var(--surface);
+    background: color-mix(in srgb, var(--sectionbg) 80%, transparent);
     border: 1px dashed var(--muted);
     border-radius: 8px;
 

@@ -18,10 +18,10 @@
     border-radius: 20px;
     background: linear-gradient(
         160deg,
-        var(--surface),
+        var(--edumajor),
         var(--glass)
     );
-    border: 1px solid var(--glassviolet);
+    border: 1px solid var(--lpurple);
 
     transition: transform 0.20s ease;
 }
@@ -41,14 +41,14 @@
   padding: 0.9rem 1.2rem;
   border-radius: 14px;
 
-  background: var(--mid);
+  background: var(--bg);
   border: 1px dashed --muted;
 
   transition: background 0.2s ease;
 }
 
 .edu-card.minor:hover {
-  background: var(--surface);
+  background: var(--mid);
 }
 
 .edu-card.minor .experience-subtitle {

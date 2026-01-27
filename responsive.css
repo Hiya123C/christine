@@ -1,0 +1,39 @@
+/* tablet */
+@media (max-width: 900px) {
+    body {
+        padding-left: 200px;
+    }
+    .photo-strip img {
+        width: 140px;
+    }
+}
+
+
+/* mobile */
+@media (max-width: 600px) {
+    body {
+        padding-left: 0;
+    }
+    .photo-strip {
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        margin: 2rem auto;
+    }
+    .photo-strip img {
+        width: 110px;
+        transform: rotate(0deg);
+    }
+    .whoami-card {
+        flex-direction: column;
+    }
+
+    .whoami-text {
+        max-width: 100%;
+    }
+
+    .whoami-tags {
+        justify-content: flex-start;
+        margin-top: 1rem;
+    }
+}
