@@ -46,6 +46,8 @@ const covers = document.querySelectorAll(".song-cover");
 const githubLogo = document.getElementById("github-logo");
 const linkedinLogo = document.getElementById("linkedin-logo");
 
+const sparkleStar = document.querySelector(".sparkle-text");
+
 const updateCover = () => {
     covers.forEach(cover => {
         cover.src = document.body.classList.contains("light-mode") ? "logos/light-SL.jpeg" : "logos/dark-SL.jpg";

@@ -22,9 +22,8 @@
     background: linear-gradient(
         to bottom,
         transparent,
-        var(--dpurple),
-        var(--glassviolet),
-        var(--dpurple),
+        var(--purple),
+        var(--purple),
         transparent
     );
     z-index: -1;

@@ -36,7 +36,6 @@
     to bottom,
     transparent,
     var(--dpurple),
-    var(--glassviolet),
     var(--dpurple),
     transparent
   );
@@ -57,7 +56,8 @@
 
 .skills-subtitle {
     color: var(--glassviolet);
-    font-weight: 350;
+    font-family: "Lexend";
+    font-weight: 400;
     font-size: 1.2rem;
     margin-bottom: 0.4rem;
     margin-top: 1rem;

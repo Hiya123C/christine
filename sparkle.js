@@ -11,12 +11,19 @@ function randomBetween(min, max) {
     return Math.random() * (max-min) + min;
 }
 
+// dark light toggle
+function getSparkleSrc() {
+    return document.body.classList.contains("light-mode")
+        ? "assets/Lightsparkle.svg"
+        : "assets/Darksparkle.svg";
+}
+
 function createSparkle() {
     const sparkle = document.createElement("div");
     sparkle.classList.add("sparkle-container");
 
     const svg = document.createElement("img");
-    svg.src = "assets/sparkle.svg";
+    svg.src = getSparkleSrc();
     svg.style.width = `${randomBetween(MIN_SIZE, MAX_SIZE)}px`;
     svg.style.height = svg.style.width;
 
