@@ -48,7 +48,7 @@
   --dpurple: #FFED8D;
   --glassviolet: #7680c6;
 
-  --lyellow: #ffd56a66;
+  --lyellow: #d4c2f9;
   --yellow: #9fa3e3;
   --gold: #f06f83;
   --pyellow: #c08621;
@@ -89,7 +89,11 @@ body {
     align-items: center;
 
     overflow-x: hidden;
-    cursor: url("assets/cursor-star.svg") 8 8, auto;
+    cursor: url("assets/cursor-Darkstar.svg") 8 8, auto;
+}
+
+body.light-mode {
+    cursor: url("assets/cursor-Lightstar.svg") 8 8, auto;
 }
 
 /* STAR BG */
@@ -183,21 +187,21 @@ body {
 
 .title {
     color: var(--white);
-    font-weight: 450;
-    font-size: 4.5rem;
+    font-weight: 650;
+    font-size: 5rem;
     margin: 0;
     /* border: 2px solid red; */
 }
 
 .highlight {
     color: var(--fblue);
-    font-weight: 500;
+    font-weight: 650;
 }
 
 .section-title {
     color: var(--gold);
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0;
     /* border: 2px solid red; */
 }

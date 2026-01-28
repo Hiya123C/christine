@@ -43,22 +43,32 @@ let lightmode = localStorage.getItem('light-mode');
 const themeSwitch = document.getElementById('theme-switch');
 const covers = document.querySelectorAll(".song-cover");
 
+const githubLogo = document.getElementById("github-logo");
+const linkedinLogo = document.getElementById("linkedin-logo");
+
 const updateCover = () => {
     covers.forEach(cover => {
         cover.src = document.body.classList.contains("light-mode") ? "logos/light-SL.jpeg" : "logos/dark-SL.jpg";
     })
 }
 
+const updateContactLogos = () => {
+    githubLogo.src = document.body.classList.contains("light-mode") ? "logos/GitHub_Invertocat_Black.png" : "logos/GitHub_Invertocat_White.png";
+    linkedinLogo.src = document.body.classList.contains("light-mode") ? "logos/InBug-Black.png" : "logos/InBug-White.png";
+}
+
 const enableLightmode = () => {
     document.body.classList.add('light-mode');
     localStorage.setItem('light-mode', 'active')
     updateCover();
+    updateContactLogos();
 }
 
 const disableLightmode = () => {
     document.body.classList.remove('light-mode');
     localStorage.setItem('light-mode', 'null');
     updateCover();
+    updateContactLogos();
 }
 
 if (lightmode === "active") {

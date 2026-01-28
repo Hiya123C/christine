@@ -1,15 +1,28 @@
-/* tablet */
-@media (max-width: 900px) {
-    body {
-        padding-left: 200px;
+@media (max-width: 1050px) {
+    .vertical-nav {
+        display: none;
     }
-    .photo-strip img {
-        width: 140px;
+    .photo-strip {
+        position: relative;
+        margin-right: 100px;
+    }
+    .photo-strip-side-left {
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+    }
+    .photo-strip-content-column {
+        display: flex;
+        flex-direction: column;
     }
 }
 
+@media (max-width: 700px) {
+    #contact-me p {
+        display: none;
+    }
+}
 
-/* mobile */
 @media (max-width: 600px) {
     body {
         padding-left: 0;
@@ -37,3 +50,5 @@
         margin-top: 1rem;
     }
 }
+
+/* auto scroll horizontal pics :) for phone */

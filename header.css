@@ -7,6 +7,7 @@
     border-radius: 999px;
     background: color-mix(in srgb, var(--glass) 65%, transparent);
     backdrop-filter: blur(1px);
+    width: fit-content;
 }
 
 /* sparkle christine text */

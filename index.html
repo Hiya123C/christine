@@ -6,11 +6,17 @@
     <title>christine!</title>
     <link rel="icon" href="logos/favicon.jpeg">
 
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    
+
+    <!-- mail logo -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+
+
+    <!-- css -->
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="photostrip.css">
@@ -24,6 +30,7 @@
     <link rel="stylesheet" href="certification.css">
     <link rel="stylesheet" href="competition.css">
     <link rel="stylesheet" href="responsive.css">
+
 </head>
 <body>
     <!-- bg stars??? -->
@@ -31,6 +38,7 @@
         <div class="stars"></div>
     </div>
 
+    <div class="photo-strip-side-left">
     <!-- photos -->
     <div class="photo-strip">
         <div class="photo">
@@ -118,15 +126,15 @@
             <img src="assets/heart1.svg">
         </a>
         <a href="#skills" class="nav-heart">
-            <p class="nav-title lexend">Skills</p>
+            <p class="nav-title lexend">skills</p>
             <img src="assets/heart2.svg">
         </a>
         <a href="#projects" class="nav-heart">
-            <p class="nav-title lexend">Projects</p>
+            <p class="nav-title lexend">projects</p>
             <img src="assets/heart3.svg">
         </a>
         <a href="#experiences" class="nav-heart">
-            <p class="nav-title lexend">Experiences</p>
+            <p class="nav-title lexend">experiences</p>
             <img src="assets/heart1.svg">
         </a>
     </nav>
@@ -136,6 +144,7 @@
         <img src="assets/lightmode.svg" class="toggle-icon right">
     </button>
 
+    <div class="photo-strip-content-column">
     <div id="header" class="section">
         <h2 class="title crimson-pro">Hi! I'm <span class="highlight sparkle-text">Christine</span> :)</h2>
         <span class="cube lexend">
@@ -156,18 +165,18 @@
             <!-- the contact logos -->
             <div id="contact-me">
                 <a href="https://github.com/Hiya123C" target="_blank" class="contact-link">
-                    <img src="logos/github-mark-white.png" style="width: 30px; height: 30px;">
+                    <img id="github-logo" src="logos/GitHub_Invertocat_White.png" style="width: 33px; height: 33px;">
                     <p class="lexend">Hiya123C</p>
                 </a>
 
                 <a href="https://www.linkedin.com/in/christine-lee-129b8a243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link">
-                    <img src="logos/InBug-White.png" style="width: 30px; height: 30px;">
+                    <img id="linkedin-logo" src="logos/InBug-White.png" style="width: 30px; height: 30px;">
                     <p class="lexend">Christine</p>
                 </a>
 
                 <!-- update mail link -->
                 <a href="https://www.linkedin.com/in/christine-lee-129b8a243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link">
-                    <img src="logos/mail.png" style="width: 35px; height: 35px;">
+                    <span class="material-symbols-outlined mail-logo">mail</span>
                     <p class="lexend">Crystal</p>
                 </a>
             </div>
@@ -186,7 +195,7 @@
     <br>
     <section id="skills" class="section">
         <div class="skills-container">
-            <h3 class="section-title crimson-pro">Skills</h3>
+            <h3 class="section-title crimson-pro">skills</h3>
             <div class="skills-row">
                 <div class="skills-column">
                     <h5 class="skills-title crimson-pro">Music</h5>
@@ -221,7 +230,7 @@
     <br>
     <section id="projects" class="section">
         <div class="project-container">
-            <h3 class="section-title crimson-pro">Projects</h3>
+            <h3 class="section-title crimson-pro">projects</h3>
             <!-- split music and tech -->
             <!-- put a music/quaver logo for music -->
             <!-- i want to kill myself -->
@@ -346,7 +355,7 @@
     <br>
     <section id="experiences" class="section">
         <div class="experience-container">
-            <h3 class="section-title crimson-pro">Experiences</h3>
+            <h3 class="section-title crimson-pro">experiences</h3>
 
             <!-- edu and prog -->
             <h5 class="experience-title crimson-pro">Education & Programmes</h5>
@@ -599,6 +608,8 @@
         </div>
         <br>
     </section>
+    </div>
+    </div>
 
     <script src="script.js"></script>
     <script src="sparkle.js"></script>

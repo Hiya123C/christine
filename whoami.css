@@ -40,6 +40,18 @@
   transition: 0.2s ease;
 }
 
+.mail-logo {
+  font-size: 35px;
+  color: var(--white);
+}
+
+.contact-link:hover .mail-logo {
+  transform: scale(1.05);
+  transition: 0.2s ease;
+  
+  color: var(--pyellow);
+}
+
 /* WHOAMI */
 .whoami-container {
   display: flex;
