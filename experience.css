@@ -31,14 +31,14 @@
 }
 
 .experience-subtitle {
-  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-size: clamp(0.9rem, 2vw, 0.1rem);
   font-family: "Lexend";
   margin: 0;
   color: var(--white);
 }
 
 .experience-year {
-  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  font-size: clamp(0.8rem, 2vw, 0.8rem);
   color: var(--muted);
   margin: 5px 0;
   font-family: "Lexend";
@@ -54,7 +54,7 @@
 
 .edu-experience-desc,
 .edu-experience-desc li {
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
   color: var(--edutext);
   line-height: 1.5;
   font-family: "Lexend";

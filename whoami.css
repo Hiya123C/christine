@@ -17,9 +17,13 @@
   margin-bottom: 0.6rem;
 }
 
-.whoami-card .para-text {
-  margin: 0.4rem 0 0.8rem;
-  line-height: 1.55;
+.para-text {
+    font-family: "Lexend", sans-serif;
+    font-style: normal;
+    flex-wrap: wrap;
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    margin: 0.4rem 0 0.8rem;
+    line-height: 1.55;
 }
 
 .whoami-tags {

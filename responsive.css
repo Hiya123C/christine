@@ -41,17 +41,15 @@
     .photo-row {
         position: relative;
         display: flex;
-        gap: 1rem;
+        gap: clamp(0.5rem, 3vw, 1rem);
         justify-content: center;
         align-items: center;
         transform: translateY(-40px);
         margin-bottom: -50px;
-
-        border: 2px solid red;
         z-index: 5;
     }
     .photo img {
-        width: clamp(100px, 2vw, 125px);
+        width: clamp(90px, 20vw, 130px);
         border-radius: 16px;
         object-fit: cover;
 
@@ -69,12 +67,24 @@
 
 }
 
-
 @media (max-width: 550px) {
     #contact-me p {
         display: none;
     }
 }
 
-
-/* auto scroll horizontal pics :) for phone */
+@media (max-width: 470px) {
+    .photo-row {
+        display: none;
+    }
+    .phone-photo {
+        display: block;
+    }
+    .header-row {
+        display: flex;
+        border: 2px solid red;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+    }
+}

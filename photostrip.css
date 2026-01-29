@@ -58,3 +58,20 @@
     opacity: 1;
     transform: translateX(-50%) translateY(0);
 }
+
+.phone-photo {
+    display: none;
+}
+
+.phone-photo img {
+    width: 100px;
+    border-radius: 16px;
+    object-fit: cover;
+
+    transform: rotate(4deg);
+    transition: transform 0.35s ease;
+}
+
+.phone-photo:hover img {
+    transform: rotate(0deg) scale(1.1);
+}

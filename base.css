@@ -63,7 +63,7 @@
   /* ... */
   --sectionbg: #ffffff;
   --cubetext: #b62962;
-  --edumajor: #e9a7c3;
+  --edumajor: #f8b6b0;
   --edutext: rgb(85, 80, 80);
 }
 
@@ -188,14 +188,6 @@ body.light-mode {
     font-style: normal;
 }
 
-.title {
-    color: var(--white);
-    font-weight: clamp(450, 500, 650);
-    font-size: clamp(3.5rem, 5vw, 5rem);
-    margin: 0;
-    /* border: 2px solid red; */
-}
-
 .highlight {
     color: var(--fblue);
     font-weight: 650;
@@ -206,13 +198,6 @@ body.light-mode {
     font-size: clamp(2.5rem, 3vw, 3rem);
     font-weight: 500;
     margin: 0;
-    /* border: 2px solid red; */
-}
-
-.para-text {
-    font-family: "Lexend", sans-serif;
-    font-style: normal;
-    flex-wrap: wrap;
 }
 
 /* divider */
