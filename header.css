@@ -1,12 +1,13 @@
 /* HEADER */
 #header {
     position: relative;
-    margin-top: 8vh;
-    padding: 32px 64px;
+    margin: 8vh auto 0 auto;
+    padding: clamp(24px, 3vh + 1rem, 48px) clamp(64px, 6vw + 1rem, 96px);
     border: 4px dashed var(--fblue);
     border-radius: 999px;
     background: color-mix(in srgb, var(--glass) 65%, transparent);
     backdrop-filter: blur(1px);
+    text-align: center;
     width: fit-content;
 }
 

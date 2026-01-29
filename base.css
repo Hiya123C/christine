@@ -29,6 +29,8 @@
   /* section-bg */
   --sectionbg: #1c1f42;
   --cubetext: #EFBF04;
+  --edumajor: #303863;
+  --edutext: #ffffff;
 }
 
 /* this is torture */
@@ -62,7 +64,7 @@
   --sectionbg: #ffffff;
   --cubetext: #b62962;
   --edumajor: #e9a7c3;
-  --edutext: rgb(122, 115, 115);
+  --edutext: rgb(85, 80, 80);
 }
 
 /* *,
@@ -187,8 +189,8 @@ body.light-mode {
 
 .title {
     color: var(--white);
-    font-weight: 650;
-    font-size: 5rem;
+    font-weight: clamp(450, 500, 650);
+    font-size: clamp(3.5rem, 5vw, 5rem);
     margin: 0;
     /* border: 2px solid red; */
 }
@@ -200,7 +202,7 @@ body.light-mode {
 
 .section-title {
     color: var(--gold);
-    font-size: 3rem;
+    font-size: clamp(2.5rem, 3vw, 3rem);
     font-weight: 500;
     margin: 0;
     /* border: 2px solid red; */

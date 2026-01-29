@@ -4,51 +4,41 @@
     }
     .photo-strip {
         position: relative;
-        margin-right: 100px;
+        left: 0;
     }
     .photo-strip-side-left {
         display: flex;
         flex-direction: row;
-        padding: 50px;
+        gap: clamp(50px, 5vw, 100px);
+        margin-right: clamp(50px, 9vw, 200px);
+        margin-left: clamp(20px, 2vw, 100px);
     }
     .photo-strip-content-column {
         display: flex;
         flex-direction: column;
     }
+    .tags-row {
+        margin-top: 0.5rem;
+    }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
+    .photo-strip {
+        display: none;
+    }
+    .whoami-container, .skills-container, .project-container, .experience-container {
+        max-width: clamp(200px, 70vw, 800px);
+    }
+    .photo-strip-side-left {
+        margin: 0 auto 0 auto;
+    }
+}
+
+@media (max-width: 550px) {
     #contact-me p {
         display: none;
     }
 }
 
-@media (max-width: 600px) {
-    body {
-        padding-left: 0;
-    }
-    .photo-strip {
-        position: relative;
-        flex-direction: row;
-        justify-content: center;
-        margin: 2rem auto;
-    }
-    .photo-strip img {
-        width: 110px;
-        transform: rotate(0deg);
-    }
-    .whoami-card {
-        flex-direction: column;
-    }
-
-    .whoami-text {
-        max-width: 100%;
-    }
-
-    .whoami-tags {
-        justify-content: flex-start;
-        margin-top: 1rem;
-    }
-}
 
 /* auto scroll horizontal pics :) for phone */

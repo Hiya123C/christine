@@ -7,11 +7,7 @@
 .cert-card {
     padding: 1.4rem 1.2rem;
     border-radius: 18px;
-    background: linear-gradient(
-        160deg,
-        var(--surface),
-        var(--glass)
-    );
+    background: var(--glass);
     border: 1px solid var(--glassviolet);
     text-align: center;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -22,5 +18,5 @@
 
 .cert-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 15px var(--black);
+    box-shadow: 0 8px 13px color-mix(in srgb, var(--black) 70%, transparent);
 }
