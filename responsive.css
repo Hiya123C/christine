@@ -9,9 +9,9 @@
     .photo-strip-side-left {
         display: flex;
         flex-direction: row;
-        gap: clamp(50px, 5vw, 100px);
-        margin-right: clamp(50px, 9vw, 200px);
-        margin-left: clamp(20px, 2vw, 100px);
+        gap: clamp(50px, 10vw, 100px);
+        margin-right: clamp(50px, 7vw, 150px);
+        margin-left: clamp(20px, 4vw, 100px);
     }
     .photo-strip-content-column {
         display: flex;
@@ -22,17 +22,53 @@
     }
 }
 
+@media (max-width: 963px) {
+    .song-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .song-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
 @media (max-width: 850px) {
     .photo-strip {
         display: none;
     }
+    .photo-row {
+        position: relative;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-40px);
+        margin-bottom: -50px;
+
+        border: 2px solid red;
+        z-index: 5;
+    }
+    .photo img {
+        width: clamp(100px, 2vw, 125px);
+        border-radius: 16px;
+        object-fit: cover;
+
+        transform: rotate(-4deg);
+        transition: transform 0.35s ease;
+    }
+
     .whoami-container, .skills-container, .project-container, .experience-container {
         max-width: clamp(200px, 70vw, 800px);
+        margin: 0 auto;
     }
     .photo-strip-side-left {
         margin: 0 auto 0 auto;
     }
+
 }
+
 
 @media (max-width: 550px) {
     #contact-me p {

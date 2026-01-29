@@ -15,7 +15,7 @@
 .edu-card.major {
     padding: 1rem 2rem;
     border-radius: 20px;
-    background: var(--glass);
+    background: var(--edumajor);
     border: 1px solid var(--lpurple);
 
     transition: transform 0.15s ease;

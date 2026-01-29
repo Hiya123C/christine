@@ -3,7 +3,7 @@
   --bg: #0f1224;
   --mid: #171a34;
   --surface: #1c1f42;
-  --glass: #0c1445;
+  --glass: #202854;
 
   --fblue: #b8d8ff;
   --tblue: #7fb3ea;
@@ -29,7 +29,7 @@
   /* section-bg */
   --sectionbg: #1c1f42;
   --cubetext: #EFBF04;
-  --edumajor: #303863;
+  --edumajor: #202854;
   --edutext: #ffffff;
 }
 
@@ -152,6 +152,7 @@ body.light-mode {
     position: fixed;
     bottom: 1.5vh;
     right: 3vw;
+    cursor: pointer;
 
     z-index: 50;
 }

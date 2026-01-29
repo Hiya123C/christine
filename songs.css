@@ -7,6 +7,9 @@
   border-radius: 15px;
   gap: 20px;
   padding: 10px;
+
+  min-width: 0;
+  max-width: 100%;
 }
 
 /* THIS IS THE IMG SL, not the entire thing omg my names are so confusing */
@@ -23,17 +26,18 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
+  width: 100%;
 }
 
 .song-title {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   color: var(--white);
 }
 
 .song-desc {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
   color: var(--glassviolet);
 }
 
@@ -41,32 +45,28 @@
   background: transparent;
   border: 1px solid var(--lblue);
   color: var(--white);
-  font-size: 12px;
-  padding: 6px 10px;
+  font-size: clamp(0.7rem, 2vw, 0.8rem);
   border-radius: 8px;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
 .play-btn, .pause-btn {
   all: unset;
   cursor: pointer;
-  /* font-size: 1.5rem; */
   width: 20px;
   height: 20px;
-  margin-left: 10px;
-  margin-right: 50px;
-  filter: brightness(0.9);
-  transition: transform 0.2s ease, filter 0.2s ease;
+  transition: transform 0.1s ease;
 }
 
 .play-btn:hover,
 .pause-btn:hover {
   transform: scale(1.15);
-  filter: brightness(1.2) drop-shadow(0 0 6px var(--yellow));
 }
 
 /* SLIDERRRR CUSTOMISATION */

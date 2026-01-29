@@ -14,25 +14,27 @@
 /* for the songs */
 .song-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
 }
 /* for the tech */
 .project-row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
+  align-items: stretch;
 }
 
 .project-column {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between; 
   align-items: flex-start;
   background: var(--blue);
-  padding: 10px 25px;
   border: 2px solid var(--tblue);
+  padding: 10px 25px;
   border-radius: 20px;
+  min-width: 0;
 
   transition: transform 0.2s ease;
 }
@@ -45,12 +47,13 @@
 .project-mini-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
 }
 
 .project-logo {
-  width: 80px;
-  height: 80px;
+  width: clamp(60px, 5vw,80px);
+  height: clamp(60px, 5vw,80px);
   border-radius: 15px;
   object-fit: cover;
 }
@@ -58,19 +61,19 @@
 /* FONT... */
 
 .project-title {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-family: "Crimson Pro";
   color: var(--white);
-  margin: auto 2rem;
+  margin: 0;
 }
 
 .project-desc {
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
   font-family: "Lexend";
   color: var(--white);
 }
 
-.project-column a {
+.project-row a {
   text-decoration: none;
   color: inherit;
 }
