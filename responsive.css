@@ -82,9 +82,16 @@
     }
     .header-row {
         display: flex;
-        border: 2px solid red;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
         margin: 0;
+    }
+    /* the minor edu shit */
+    .hide {
+        display: none;
+    }
+    .edu-grid {
+        grid-template-columns: 1fr;
+        gap: clamp(1rem, 1vw, 2rem);
     }
 }
