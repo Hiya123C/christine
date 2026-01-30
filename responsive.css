@@ -5,6 +5,8 @@
     .photo-strip {
         position: relative;
         left: 0;
+        justify-content: space-around;
+        margin-bottom: 80px;
     }
     .photo-strip-side-left {
         display: flex;

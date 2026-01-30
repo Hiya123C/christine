@@ -1,7 +1,7 @@
 .skills-container {
     display: flex;
     flex-direction: column;
-    padding: 1rem 2rem;
+    padding: 2rem;
     border: 2px dashed var(--dpurple);
     border-radius: 18px;
     background: color-mix(in srgb, var(--sectionbg) 65%, transparent);
@@ -60,7 +60,7 @@
     font-family: "Lexend";
     font-weight: 400;
     font-size: clamp(1rem, 3vw, 1.2rem);
-    margin-bottom: 0;
+    margin-bottom: -0.25rem;
     margin-top: 1rem;
 }
 
@@ -70,6 +70,7 @@
     font-size: clamp(0.8rem, 3vw, 1rem);
     font-family: "Lexend";
     margin-right: 10px;
+    margin-bottom: -0.25rem;
 }
 
 .skills-subtitle::before {
