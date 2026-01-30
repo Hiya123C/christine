@@ -87,11 +87,12 @@
         margin: 0;
     }
     /* the minor edu shit */
-    .hide {
-        display: none;
-    }
     .edu-grid {
         grid-template-columns: 1fr;
         gap: clamp(1rem, 1vw, 2rem);
+    }
+    .edu-secondary {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }

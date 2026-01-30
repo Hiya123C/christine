@@ -59,17 +59,17 @@
     color: var(--glassviolet);
     font-family: "Lexend";
     font-weight: 400;
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
-    margin-bottom: 0.4rem;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    margin-bottom: 0;
     margin-top: 1rem;
 }
 
 .skills-desc {
     color: var(--white);
     font-weight: 400;
-    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    font-size: clamp(0.8rem, 3vw, 1rem);
     font-family: "Lexend";
-    margin: 0;
+    margin-right: 10px;
 }
 
 .skills-subtitle::before {
