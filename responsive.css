@@ -1,3 +1,36 @@
+@media (max-width: 1400px) {
+    .photo-strip {
+        gap: 3.5rem;
+    }
+}
+
+@media (max-width: 1345px) {
+    .photo-strip {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .photo-strip {
+        gap: 4.5rem;
+    }
+}
+
+@media (max-width: 1180px) {
+    .photo-strip {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .photo-strip {
+        gap: 5.5rem;
+    }
+}
+
+
+
+
 @media (max-width: 1050px) {
     .vertical-nav {
         display: none;

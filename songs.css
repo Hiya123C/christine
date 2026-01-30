@@ -31,14 +31,14 @@
 
 .song-title {
   margin: 0;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(1.1rem, 2vw, 1.2rem);
   color: var(--white);
 }
 
 .song-desc {
   margin: 0;
   font-size: clamp(0.8rem, 2vw, 0.9rem);
-  color: var(--glassviolet);
+  color: var(--white);
 }
 
 .version-select {

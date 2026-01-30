@@ -46,7 +46,7 @@
 
 .experience-desc,
 .experience-desc li {
-  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
   color: var(--edutext);
   font-family: "Lexend";
   margin: 0;
@@ -54,7 +54,7 @@
 
 .edu-experience-desc,
 .edu-experience-desc li {
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
   color: var(--edutext);
   line-height: 1.5;
   font-family: "Lexend";
